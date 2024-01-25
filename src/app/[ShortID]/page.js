@@ -1,5 +1,6 @@
 "use client";
 
+import Loader from "@/components/Loader";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -29,9 +30,9 @@ const Redirect = ({ params }) => {
   }, []);
 
   return (
-    <>
-      {loading && "Waiting..."} {error}
-    </>
+    <div className="bg-gray-950 text-white h-screen grid place-items-center">
+      {loading && <Loader />} {error}
+    </div>
   );
 };
 

@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 import shortid from "shortid";
 import validUrl from "valid-url";
 initDB();
-export const baseUrl = "http://127.0.0.1:3000";
+export const baseUrl = "https://urlshortnernew.vercel.app";
 // --------------Short URL--------------
 export const POST = async (request) => {
   const { longUrl } = await request.json();
